@@ -6,7 +6,7 @@ model: <placeholder>
 tools:
   confluence-read: true
 skill: requirement-review
-produces: /artifacts/requirement-review.md
+produces: /artifacts/requirement-review-{PageID}-{YYYYMMDDhhmm}.md
 consumers:
   - jira-task-agent
   - test-design-agent

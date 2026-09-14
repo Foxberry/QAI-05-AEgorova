@@ -7,8 +7,8 @@ tools:
   qase-read: true
   qase-create: true
 skill: test-design
-consumes: /artifacts/requirement-review.md
-produces: /artifacts/test-model.md
+consumes: /artifacts/requirement-review-{PageID}-{YYYYMMDDhhmm}.md
+produces: /artifacts/test-model-{PageID}-{YYYYMMDDhhmm}.md
 reads:
   - AGENTS.md
 ---

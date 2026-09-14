@@ -7,8 +7,8 @@ tools:
   jira-read: true
   jira-create: true
 skill: task-design
-consumes: /artifacts/requirement-review.md
-produces: /artifacts/jira-task.md
+consumes: /artifacts/requirement-review-{PageID}-{YYYYMMDDhhmm}.md
+produces: /artifacts/jira-task-{PageID}-{YYYYMMDDhhmm}.md
 reads:
   - AGENTS.md
 ---

@@ -71,7 +71,7 @@ reads:
 1. Определи цель текущего запуска и ожидаемый результат.
 2. Определи необходимые входные данные и Context.
 3. Вызови **requirement-review-agent** для получения требований из Confluence.
-4. Получи Requirement Review Artifact из `/artifacts/requirement-review.md`.
+4. Получи Requirement Review Artifact из `/artifacts/requirement-review-{PageID}-{YYYYMMDDhhmm}.md`.
 5. Проверь Requirement Review Gate.
 6. Если Gate пройден — используй Artifact как основной вход следующих этапов.
 7. Вызови **jira-task-agent** с проверенным Requirement Review Artifact.
@@ -93,14 +93,14 @@ reads:
 
 ### Requirement Review Gate
 
-- Artifact `/artifacts/requirement-review.md` существует;
+- Artifact `/artifacts/requirement-review-{PageID}-{YYYYMMDDhhmm}.md` существует;
 - Completion Criteria Skill `requirement-review` выполнены;
 - критические неоднозначности и конфликты явно зафиксированы;
 - отсутствующая информация не заменена предположениями.
 
 ### Task Design Gate
 
-- Artifact `/artifacts/jira-task.md` существует;
+- Artifact `/artifacts/jira-task-{PageID}-{YYYYMMDDhhmm}.md` существует;
 - Completion Criteria Skill `task-design` выполнены;
 - каждая задача имеет основание в Requirement Review;
 - неразрешённые бизнес-противоречия не превращены в готовые критерии
@@ -115,7 +115,7 @@ reads:
 
 ### Test Design Gate
 
-- Artifact `/artifacts/test-model.md` существует;
+- Artifact `/artifacts/test-model-{PageID}-{YYYYMMDDhhmm}.md` существует;
 - Completion Criteria Skill `test-design` выполнены;
 - необходимые требования имеют тестовое покрытие;
 - отсутствующее бизнес-поведение не выдумано.

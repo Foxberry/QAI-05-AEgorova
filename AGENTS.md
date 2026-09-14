@@ -100,9 +100,9 @@ Orchestrator вызывает саб-агентов как Tools (LLM-as-tool). 
 
 | Artifact | Producer | Consumer | Path |
 |---|---|---|---|
-| Requirement Review | requirement-review-agent | jira-task-agent, test-design-agent | /artifacts/requirement-review.md |
-| Jira Tasks | jira-task-agent | orchestrator | /artifacts/jira-task.md |
-| Test Model | test-design-agent | orchestrator | /artifacts/test-model.md |
+| Requirement Review | requirement-review-agent | jira-task-agent, test-design-agent | /artifacts/requirement-review-{PageID}-{YYYYMMDDhhmm}.md |
+| Jira Tasks | jira-task-agent | orchestrator | /artifacts/jira-task-{PageID}-{YYYYMMDDhhmm}.md |
+| Test Model | test-design-agent | orchestrator | /artifacts/test-model-{PageID}-{YYYYMMDDhhmm}.md |
 
 Для каждого Artifact определены: Producer, Consumer, Structure, Validation,
 Version при необходимости, Error Handling. Не изменяй Artifact Contract
